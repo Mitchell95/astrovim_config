@@ -4,6 +4,20 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
+  i = {
+    -- ["<C-h"] = {"<left>", desc = "move left in insert mode"},
+    -- ["<C-j"] = {"<Down>", desc = "move down in insert mode"},
+    -- ["<C-k"] = {"<Up>", desc = "move up in insert mode"},
+    -- ["<C-l"] = {"<Right>", desc = "move right in insert mode"},
+
+    -- ["<C-h"] = {"<cmd> SmartCursorMoveLeft <cr>", desc = "move left in insert mode"},
+    -- ["<C-j"] = {"<cmd> SmartCursorMoveDown <cr>", desc = "move down in insert mode"},
+    -- ["<C-k"] = {"<cmd> SmartCursorMoveUp <cr>", desc = "move up in insert mode"},
+    -- ["<C-l"] = {"<cmd> SmartCursorMoveRight <cr>", desc = "move right in insert mode"},
+    -- ["<C-n>"] = {"<cmd> echo 'Hello it works?'<cr>", desc = "quick test"},
+    -- ["C-h"] = {require('smart-splits').move_cursor_left()},
+
+  },
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
@@ -20,8 +34,8 @@ return {
 
     -- mappings seen under group name "Buffer"\
     [";"] = { ":", desc = "enter cmdline"},
-   
     ["<leader>a"] = {"<cmd> echo 'Hello world!'<cr>", desc = "Say hello world"},
+
 
     ["<leader>bD"] = {
       function()
