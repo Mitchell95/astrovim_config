@@ -18,7 +18,11 @@ return {
     --   desc = "Previous buffer",
     -- },
 
-    -- mappings seen under group name "Buffer"
+    -- mappings seen under group name "Buffer"\
+    [";"] = { ":", desc = "enter cmdline"},
+   
+    ["<leader>a"] = {"<cmd> echo 'Hello world!'<cr>", desc = "Say hello world"},
+
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(
@@ -36,5 +40,8 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+
   },
 }
