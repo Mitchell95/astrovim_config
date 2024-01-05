@@ -21,6 +21,16 @@ return {
   },
   -- first key is the mode
   n = {
+    ["<tab>"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next Buffer",
+    },
+
+    ["<S-tab>"] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous Buffer",
+    },
+
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `H` and `L`
@@ -35,7 +45,6 @@ return {
 
     -- mappings seen under group name "Buffer"\
     [";"] = { ":", desc = "enter cmdline"},
-    ["<leader>a"] = {"<cmd> echo 'Hello world!'<cr>", desc = "Say hello world"},
 
 
     ["<leader>bD"] = {
