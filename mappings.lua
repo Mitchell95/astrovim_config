@@ -5,17 +5,18 @@
 -- automatically pick-up stored data by this setting.)
 return {
   i = {
-    -- ["<C-h"] = {"<left>", desc = "move left in insert mode"},
-    -- ["<C-j"] = {"<Down>", desc = "move down in insert mode"},
-    -- ["<C-k"] = {"<Up>", desc = "move up in insert mode"},
-    -- ["<C-l"] = {"<Right>", desc = "move right in insert mode"},
+    ["<C-h>"] = {"<left>", desc = "move left in insert mode"},
+    ["<C-j>"] = {"<Down>", desc = "move down in insert mode"},
+    ["<C-k>"] = {"<Up>", desc = "move up in insert mode"},
+    ["<C-l>"] = {"<Right>", desc = "move right in insert mode"},
 
-    -- ["<C-h"] = {"<cmd> SmartCursorMoveLeft <cr>", desc = "move left in insert mode"},
-    -- ["<C-j"] = {"<cmd> SmartCursorMoveDown <cr>", desc = "move down in insert mode"},
-    -- ["<C-k"] = {"<cmd> SmartCursorMoveUp <cr>", desc = "move up in insert mode"},
-    -- ["<C-l"] = {"<cmd> SmartCursorMoveRight <cr>", desc = "move right in insert mode"},
+    -- ["<C-h>"] = {"<cmd>SmartCursorMoveLeft<cr>", desc = "move left in insert mode"},
+    -- ["<C-j>"] = {"<cmd>SmartCursorMoveDown<cr>", desc = "move down in insert mode"},
+    -- ["<C-k>"] = {"<cmd>SmartCursorMoveUp<cr>", desc = "move up in insert mode"},
+    -- ["<C-l>"] = {"<cmd>SmartCursorMoveRight<cr>", desc = "move right in insert mode"},
     -- ["<C-n>"] = {"<cmd> echo 'Hello it works?'<cr>", desc = "quick test"},
-    -- ["C-h"] = {require('smart-splits').move_cursor_left()},
+    -- ["<C-h>"] = {require('smart-splits').move_cursor_left()},
+     
 
   },
   -- first key is the mode
