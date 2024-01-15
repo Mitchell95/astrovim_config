@@ -3,12 +3,16 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+-- i = Insert mode
+-- N = Normal mode
+-- T = Terminal mode
+-- V = Select Mode
 return {
   i = {
-    ["<C-h>"] = {"<left>", desc = "move left in insert mode"},
-    ["<C-j>"] = {"<Down>", desc = "move down in insert mode"},
-    ["<C-k>"] = {"<Up>", desc = "move up in insert mode"},
-    ["<C-l>"] = {"<Right>", desc = "move right in insert mode"},
+    ["<C-h>"] = { "<left>", desc = "move left in insert mode" },
+    ["<C-j>"] = { "<Down>", desc = "move down in insert mode" },
+    ["<C-k>"] = { "<Up>", desc = "move up in insert mode" },
+    ["<C-l>"] = { "<Right>", desc = "move right in insert mode" },
 
     -- ["<C-h>"] = {"<cmd>SmartCursorMoveLeft<cr>", desc = "move left in insert mode"},
     -- ["<C-j>"] = {"<cmd>SmartCursorMoveDown<cr>", desc = "move down in insert mode"},
@@ -16,8 +20,6 @@ return {
     -- ["<C-l>"] = {"<cmd>SmartCursorMoveRight<cr>", desc = "move right in insert mode"},
     -- ["<C-n>"] = {"<cmd> echo 'Hello it works?'<cr>", desc = "quick test"},
     -- ["<C-h>"] = {require('smart-splits').move_cursor_left()},
-     
-
   },
   -- first key is the mode
   n = {
@@ -44,8 +46,7 @@ return {
     -- },
 
     -- mappings seen under group name "Buffer"\
-    [";"] = { ":", desc = "enter cmdline"},
-
+    [";"] = { ":", desc = "enter cmdline" },
 
     ["<leader>bD"] = {
       function()
@@ -65,7 +66,5 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
-  v = {
-
-  },
+  v = {},
 }
